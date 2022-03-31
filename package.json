@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-pablovalles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PabloValles/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PabloValles/portfolio/issues"
+  },
+  "homepage": "https://github.com/PabloValles/portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
