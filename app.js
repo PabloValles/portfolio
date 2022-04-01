@@ -1,11 +1,12 @@
 const express = require("express");
-const routerMain = require("./routers/main");
-const path = require("path");
-
 const app = express();
+const path = require("path");
+const routerMain = require("./routers/main");
+
+const PORT = process.env.PORT || 3000;
 const publicPath = path.resolve(__dirname, "./public");
 
-app.listen(3000, () => console.log("Server runing in port 3000"));
+app.listen(PORT, () => console.log(`Server runing in port ${PORT}`));
 
 app.use(express.static(publicPath));
 
