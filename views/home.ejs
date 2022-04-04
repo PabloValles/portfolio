@@ -1,39 +1,19 @@
-<!DOCTYPE html>
-<html>
-  <title>Mi Porfolio - About</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+<%- include("./partials/head") %>
   <body>
-    <div class="mvc-top">
-      <div class="mvc-bar" id="myNavbar">
-        <a href="/" class="mvc-bar-item mvc-button">HOME</a>
-        <a href="/about" class="mvc-bar-item mvc-button mvc-hide-small"
-          ><i class="fa fa-user"></i> ABOUT</a
-        >
-        <a href="#portfolio" class="mvc-bar-item mvc-button mvc-hide-small"
-          ><i class="fa fa-th"></i> PORTFOLIO</a
-        >
-      </div>
-    </div>
+    <%- include("./partials/navbar") %>
 
-    <div class="bgimg-2 mvc-display-container mvc-opacity-min" id="home">
+    <div class="bgimg-1 mvc-display-container mvc-opacity-min" id="home">
       <div class="mvc-display-middle" style="white-space: nowrap">
         <span
           class="mvc-center mvc-padding-large mvc-black mvc-xlarge mvc-wide mvc-animate-opacity"
-          >ABOUT</span
+          >MY PORFOLIO</span
         >
       </div>
     </div>
 
     <div class="mvc-content mvc-container mvc-padding-64" id="about">
-      <h3 class="mvc-center">I love photography</h3>
-      <p class="mvc-center"><em>is a hobby photographer...</em></p>
+      <h3 class="mvc-center">My Porfolio</h3>
+      <p class="mvc-center"><em>I love photography</em></p>
       <p>
         We have created a fictional "personal" website/blog, and our fictional
         character is a hobby photographer. Lorem ipsum dolor sit amet,
@@ -49,7 +29,32 @@
       </p>
     </div>
 
-     <!-- Footer -->
+    <div class="mvc-content mvc-container mvc-padding-64" id="portfolio">
+      <h3 class="mvc-center">MY WORK</h3>
+      <p class="mvc-center">
+        <em>Here are some of my latest lorem work ipsum tipsum.</em>
+      </p>
+      <br />
+
+      <div class="mvc-container-img mvc-row-padding mvc-center">
+        <div>
+          <img src="images/cathedral.jpg" class="mvc-img" />
+        </div>
+
+        <div>
+          <img src="images/road.jpg" class="mvc-img" />
+        </div>
+
+        <div>
+          <img src="images/european.jpg" class="mvc-img" />
+        </div>
+        <div>
+          <img src="images/bridge.jpg" class="mvc-img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
     <footer
       class="mvc-center mvc-black mvc-padding-64 mvc-opacity mvc-hover-opacity-off"
     >
